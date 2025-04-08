@@ -37,7 +37,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  min-width: 100vw;
+  min-width: 90vw;
 }
 
 nav a:hover {
@@ -85,7 +85,9 @@ nav a {
   text-wrap: nowrap;
 }
 
-.hero-p {
+.hero-p,
+.om-meg-p,
+.kontakt-info-p {
   font-family: "Permanent Marker", cursive;
   font-weight: 400;
   font-style: normal;
