@@ -6,8 +6,12 @@
 
 body {
   color: white;
-  background-color: black;
-  height: 200vh;
+  background-color: rgba(0, 0, 0, 0.932);
+  min-height: 100vh;
+}
+
+main {
+  min-height: 100vh;
 }
 
 header {
@@ -16,7 +20,9 @@ header {
   height: auto;
   position: sticky;
   top: 0;
-  background-color: black;
+  background-color: rgba(14, 14, 14, 0.555);
+  box-shadow: 0 0 50px 1px;
+  border-radius: 15px;
 }
 
 nav {
@@ -25,24 +31,27 @@ nav {
   position: relative;
   height: auto;
   min-width: 50vw;
-  width: 100vw;
 }
 
-.nav1,
-.nav2 {
+.nav1 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  min-width: 100vw;
+}
 
-  min-width: 40vw;
+nav a:hover {
+  filter: brightness(120%);
+  box-shadow: 0 0 100px 1px #bebebe;
 }
 
 nav a {
   border: 1px solid #eee;
-  background-color: rgb(190, 190, 190);
+  background-color: #eee;
   color: rgb(0, 0, 0);
   border-radius: 10px;
   text-decoration: none;
-  margin: 0 1vw;
+  margin: 1vh 1vw;
   padding: 1%;
   height: auto;
 }
@@ -66,7 +75,8 @@ nav a {
   
 }
 
-.hehe {
+.hehe,
+.hehe2 {
   border: 1px solid #fda530;
   background-color: #fda530;
   color: black;
@@ -94,8 +104,8 @@ h1, .hehe {
   width: 50%;
 }
 
-.yo {
-  display: flex;
+.om-meg,
+.kontakt-info {
   justify-content: center;
   margin: 50px 10vw;
   flex-wrap: wrap;
@@ -105,11 +115,13 @@ footer {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   position: sticky;
   left: 0;
   bottom: 0;
-  width: 100%;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 0 50px 1px black;
 }
 
 ul li {
@@ -117,17 +129,41 @@ ul li {
  width: 30vw;
 }
 
-.some-logo {
-  max-width: 30px;
-}
+
 
 ul {
+  padding: 0;
   list-style: none;
 }
 
-.jump::before {
-content: "";
-display: block;
-height: 150px;
-margin: -50px 0 0;
+
+
+
+h2,
+.hehe2 {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  width: 10vw;
+  justify-content: center;
+}
+
+.ig-logo {
+  max-width: 60px;
+}
+
+.fb-logo {
+  padding-left: 12px;
+  padding-top: 8px;
+  max-width: 29px;
+}
+
+.git-logo {
+  max-width: 43px;
 }
