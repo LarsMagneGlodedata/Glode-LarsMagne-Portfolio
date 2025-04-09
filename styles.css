@@ -1,7 +1,13 @@
+/* GLOBAL */
 * {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   margin: 1%;
+}
+
+section {
+  height: 100vh;
+  border-bottom: 1px solid #eee;
 }
 
 body {
@@ -14,6 +20,7 @@ main {
   min-height: 100vh;
 }
 
+/* HEADER */
 header {
   display: flex;
   align-items: center;
@@ -37,7 +44,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  min-width: 90vw;
+  min-width: 80vw;
 }
 
 nav a:hover {
@@ -63,16 +70,24 @@ nav a {
   height: auto;
 }
 
-.hero {
+/* MAIN */
+.hero,
+.om-meg,
+.kontakt-info {
   display: flex;
-  height: auto;
+  justify-content: center;
+  align-items: center;
+  
 }
 
-.hero-img {
+.hero-img,
+.om-meg-img,
+.kontakt-info-img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  
+  border-radius: 10%;
+  box-shadow: 0 0 10px 2px;
 }
 
 .hehe,
@@ -83,6 +98,7 @@ nav a {
   border-radius: 5px;
   padding: 5px;
   text-wrap: nowrap;
+  margin: 1% 0 1% 0;
 }
 
 .hero-p,
@@ -101,18 +117,26 @@ h1, .hehe {
   margin-bottom: 30px;
 }
 
-
-.hero-text, .hero-img {
-  width: 50%;
-}
-
-.om-meg,
-.kontakt-info {
+h2,
+.hehe2 {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
   justify-content: center;
-  margin: 50px 10vw;
+  align-items: center;
   flex-wrap: wrap;
 }
 
+.hero-text,
+.hero-img,
+.om-meg-text,
+.om-meg-img,
+.kontakt-info-text,
+.kontakt-info-img {
+  width: 50%;
+}
+
+/* FOOTER */
 footer {
   display: flex;
   justify-content: center;
@@ -131,24 +155,12 @@ ul li {
  width: 30vw;
 }
 
-
-
 ul {
   padding: 0;
   list-style: none;
 }
 
 
-
-
-h2,
-.hehe2 {
-  font-size: 30px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .social {
   display: flex;
@@ -168,4 +180,74 @@ h2,
 
 .git-logo {
   max-width: 43px;
+}
+
+/* PROSJEKTER MAIN */
+
+.prosjekt1,
+.prosjekt2,
+.prosjekt3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.prosjekt1-img,
+.prosjekt2-img,
+.prosjekt3-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10%;
+  box-shadow: 0 0 10px 2px;
+}
+
+.hehe,
+.hehe2 {
+  border: 1px solid #fda530;
+  background-color: #fda530;
+  color: black;
+  border-radius: 5px;
+  padding: 5px;
+  text-wrap: nowrap;
+  margin: 1% 0 1% 0;
+}
+
+.prosjekt1-p,
+.prosjekt2-p,
+.prosjekt3-info-p {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+
+.prosjekt1-text,
+.prosjekt1-img,
+.prosjekt2-text,
+.prosjekt2-img,
+.prosjekt3-text,
+.prosjekt3-img {
+  width: 50%;
+}
+
+aside {
+  justify-self: flex-end;
+  background-color: #000000ce;
+  border-radius: 15px;
+  position: sticky;
+  bottom: 0;
+  width: 20vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+aside a {
+  color: #eee;
+  text-decoration: none;
 }
