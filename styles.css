@@ -19,11 +19,8 @@ body {
 /* @MEDIA MAX 700px */
 @media screen and (max-width: 700px) {
   .nav1 {
-    max-width: 42vw;
     display: grid;
-    max-width: 42vw;
     grid-template-columns: repeat(2, 120px);
-    justify-content: center;
     gap: 0 20px;
     justify-items: center;
   }
@@ -118,7 +115,7 @@ body {
   }
   
   .nav1 {
-    min-width: 80vw;
+    min-width: 75vw;
   }
   
   .logo,
@@ -187,19 +184,12 @@ body {
 /* HEADER */
 header {
   align-items: center;
-  height: auto;
   position: sticky;
   top: 0;
   background-color: rgba(14, 14, 14, 0.555);
   box-shadow: 0 0 50px 1px;
   border-radius: 15px;
 }
-
-nav {
-  display: flex;
-  height: auto;
-}
-
 
 nav a:hover {
   filter: brightness(120%);
@@ -235,8 +225,6 @@ header a {
   margin: 1% 0 1% 0;
 }
 
-
-
 /* MAIN */
 .hero-img,
 .om-meg-img,
@@ -248,12 +236,9 @@ header a {
   box-shadow: 0 0 10px 2px;
 }
 
-
-
 /* FOOTER */
 footer {
   display: flex;
-  justify-content: center;
   justify-content: space-evenly;
   background-color: rgb(0, 0, 0);
   position: sticky;
@@ -273,8 +258,6 @@ ul {
   padding: 0;
   list-style: none;
 }
-
-
 
 .social {
   display: flex;
@@ -317,10 +300,6 @@ ul {
   box-shadow: 0 0 10px 2px;
 }
 
-
-
-
-
 .prosjekt1-text,
 .prosjekt1-img,
 .prosjekt2-text,
@@ -330,6 +309,7 @@ ul {
   width: 50%;
 }
 
+/* PROSJEKTER BOOKMARKS */
 aside {
   min-width: 70px;
   padding: 7px;
