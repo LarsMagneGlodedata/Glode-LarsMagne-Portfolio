@@ -19,12 +19,20 @@ body {
 /* @MEDIA MAX 700px */
 @media screen and (max-width: 700px) {
   .nav1 {
-    flex-direction: column;
     max-width: 42vw;
+    display: grid;
+    max-width: 42vw;
+    grid-template-columns: repeat(2, 120px);
+    justify-content: center;
+    gap: 0 20px;
+    justify-items: center;
   }
 
   header {
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .logo,
@@ -105,6 +113,10 @@ body {
 /* @MEDIA 701px+ */
 
 @media  screen and (min-width: 701px) {
+  header {
+    display: flex;
+  }
+  
   .nav1 {
     min-width: 80vw;
   }
@@ -174,7 +186,6 @@ body {
 
 /* HEADER */
 header {
-  display: flex;
   align-items: center;
   height: auto;
   position: sticky;
@@ -186,14 +197,9 @@ header {
 
 nav {
   display: flex;
-  position: relative;
   height: auto;
 }
 
-.nav1 {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 nav a:hover {
   filter: brightness(120%);
