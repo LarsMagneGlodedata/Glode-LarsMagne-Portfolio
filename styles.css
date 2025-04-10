@@ -13,11 +13,159 @@ section {
 body {
   color: white;
   background-color: rgba(0, 0, 0, 0.932);
-  min-height: 100vh;
 }
 
-main {
-  min-height: 100vh;
+
+/* @MEDIA MAX 700px */
+@media screen and (max-width: 700px) {
+  .nav1 {
+    flex-direction: column;
+    max-width: 42vw;
+  }
+
+  .logo,
+  .hehe2 {
+  font-size: 26px;
+  }
+
+  nav a {
+    margin: 3px;
+    min-width: 130px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  aside {
+    bottom: 65vh;
+  }
+
+  h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: "Permanent Marker", cursive;
+    letter-spacing: 3px;
+  }
+  
+  h2 {
+    font-family: "Permanent Marker", cursive;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .prosjekt1-p,
+  .prosjekt2-p,
+  .prosjekt3-p {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+  }
+
+  .hero-p,
+  .om-meg-p,
+  .kontakt-info-p {
+    font-family: "Permanent Marker", cursive;
+    letter-spacing: 3px;
+    color: rgb(204, 204, 204);
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .om-meg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .kontakt-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+}
+
+/* @MEDIA 701px+ */
+
+@media  screen and (min-width: 701px) {
+  .nav1 {
+    min-width: 80vw;
+  }
+  
+  .logo,
+  .hehe2 {
+  font-size: 35px;
+  }
+
+  aside {
+    bottom: 70vh;
+  }  
+
+  h1 {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: "Permanent Marker", cursive;
+    letter-spacing: 3px;
+  }
+  
+  h2 {
+    font-family: "Permanent Marker", cursive;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .prosjekt1-p,
+  .prosjekt2-p,
+  .prosjekt3-p {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+  }
+
+  .hero-p,
+  .om-meg-p,
+  .kontakt-info-p {
+    font-family: "Permanent Marker", cursive;
+    letter-spacing: 3px;
+    color: rgb(204, 204, 204);
+  }
+
+  .hero,
+  .om-meg,
+  .kontakt-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-text,
+  .hero-img,
+  .om-meg-text,
+  .om-meg-img,
+  .kontakt-info-text,
+  .kontakt-info-img {
+    width: 50%;
+  }
+
 }
 
 /* HEADER */
@@ -34,17 +182,13 @@ header {
 
 nav {
   display: flex;
-  justify-content: center;
   position: relative;
   height: auto;
-  min-width: 50vw;
 }
 
 .nav1 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  min-width: 80vw;
 }
 
 nav a:hover {
@@ -57,40 +201,20 @@ nav a {
   background-color: #eee;
   color: rgb(0, 0, 0);
   border-radius: 10px;
-  text-decoration: none;
-  margin: 1vh 1vw;
   padding: 1%;
   height: auto;
 }
 
-.logo {
-  padding: 14px 5px;
-  max-width: 40px;
-  border-radius: 50%;
-  height: auto;
+header a {
+  text-decoration: none;
 }
 
-/* MAIN */
-.hero,
-.om-meg,
-.kontakt-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.logo {
+  color: #eee;
+  padding: 14px 5px;
   
 }
 
-.hero-img,
-.om-meg-img,
-.kontakt-info-img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  border-radius: 10%;
-  box-shadow: 0 0 10px 2px;
-}
-
-.hehe,
 .hehe2 {
   border: 1px solid #fda530;
   background-color: #fda530;
@@ -101,40 +225,20 @@ nav a {
   margin: 1% 0 1% 0;
 }
 
-.hero-p,
-.om-meg-p,
-.kontakt-info-p {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 2px;
-}
 
-h1, .hehe {
-  font-size: 40px;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
 
-h2,
-.hehe2 {
-  font-size: 30px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.hero-text,
+/* MAIN */
 .hero-img,
-.om-meg-text,
 .om-meg-img,
-.kontakt-info-text,
 .kontakt-info-img {
-  width: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10%;
+  box-shadow: 0 0 10px 2px;
 }
+
+
 
 /* FOOTER */
 footer {
@@ -203,25 +307,8 @@ ul {
   box-shadow: 0 0 10px 2px;
 }
 
-.hehe,
-.hehe2 {
-  border: 1px solid #fda530;
-  background-color: #fda530;
-  color: black;
-  border-radius: 5px;
-  padding: 5px;
-  text-wrap: nowrap;
-  margin: 1% 0 1% 0;
-}
 
-.prosjekt1-p,
-.prosjekt2-p,
-.prosjekt3-p {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 2px;
-}
+
 
 
 .prosjekt1-text,
@@ -234,22 +321,27 @@ ul {
 }
 
 aside {
-  justify-self: flex-end;
+  min-width: 70px;
+  padding: 7px;
+  justify-self: flex-start;
   background-color: #000000ce;
   border-radius: 15px;
   position: sticky;
-  bottom: 0;
-  width: 20vw;
-  height: 20vh;
+  width: 10%;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
 }
 
 /* TODO: pynte meir på knappene */
 aside a {
-  color: #eee;
+  color: black;
   text-decoration: none;
-  font-size: 0.7em;
+  font-size: 0.6em;
+  background-color: #eee;
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 2%;
 }
+
