@@ -3,6 +3,7 @@
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   margin: 1%;
+  scroll-behavior: smooth;
 }
 
 section {
